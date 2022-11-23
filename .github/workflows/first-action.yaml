@@ -1,0 +1,16 @@
+name: Shell Commands
+
+# on denotes the events that trigger the workflow (push, pull etc)
+on: [push]
+
+jobs:
+  run-shell-command: 
+    runs-on: ubuntu-latest #Select OS of job
+    steps:
+      - name: echo a string
+        run: echo "Hello World!"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+          
