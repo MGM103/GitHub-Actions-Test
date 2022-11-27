@@ -16,6 +16,6 @@ jobs:
       - name: python Comand
         run: |
           import platform
-          print(platform.preocessor())
+          print(platform.processor())
         shell: python
           
