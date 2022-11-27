@@ -13,4 +13,9 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python Comand
+        run: |
+          import platform
+          print(platform.preocessor())
+        shell: python
           
