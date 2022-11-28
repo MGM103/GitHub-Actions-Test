@@ -10,6 +10,11 @@ jobs:
         run: |
           pwd
           ls
+          # useful variables
+          echo $GITHUB_SHA # commit id
+          echo $GITHUB_REPOSITORY # username & repository name
+          echo #GITHYB_WORKSPACE # workspace directory, same as pwd
+          echo "${{ github.token }}" # token that can be used for authentication
       - name: checkout
         uses: actions/checkout@v1
       - name: List files after checkout
