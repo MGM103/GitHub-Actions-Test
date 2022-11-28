@@ -1,7 +1,10 @@
 name: Shell Commands
 
 # on denotes the events that trigger the workflow (push, pull etc)
-on: [push]
+on: 
+  push:
+  pull_request:
+    types: [opened, close, reopened, close]
 
 jobs:
   run-shell-command: 
