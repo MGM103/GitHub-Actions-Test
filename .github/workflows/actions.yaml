@@ -10,6 +10,6 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-action@v1 # after @ can be branch, version or commit ID, version or commit preferred as errors may be introduced in branches
         with:
-          who-to-great: Marcus
+          [who-to-great]: Marcus
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
